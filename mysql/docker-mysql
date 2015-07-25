@@ -1,0 +1,21 @@
+#! /bin/sh
+# /etc/init.d/docker-mysql
+#
+
+case "$1" in
+  start)
+    echo "Starting docker mysql..."
+    docker start mysql_mysql_1
+    ;;
+  stop)
+    echo "Stoping docker mysql..."
+    docker stop mysql_mysql_1
+    ;;
+  *)
+    echo "Usage: sudo service docker-mysql {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+

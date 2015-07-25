@@ -1,0 +1,7 @@
+couchdb:
+  image: klaemo/couchdb:latest
+  ports:
+    - "15984:5984"
+  volumes:
+    - /srv/docker/couchdb:/usr/local/var/lib/couchdb
+

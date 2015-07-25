@@ -1,0 +1,21 @@
+#! /bin/sh
+# /etc/init.d/docker-cassandra
+#
+
+case "$1" in
+  start)
+    echo "Starting docker cassandra..."
+    docker start cassandra_cassandra_1
+    ;;
+  stop)
+    echo "Stoping docker cassandra..."
+    docker stop cassandra_cassandra_1
+    ;;
+  *)
+    echo "Usage: sudo service docker-cassandra {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+

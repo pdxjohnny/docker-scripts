@@ -1,0 +1,21 @@
+#! /bin/sh
+# /etc/init.d/docker-couchdb
+#
+
+case "$1" in
+  start)
+    echo "Starting docker couchdb..."
+    docker start couchdb_couchdb_1
+    ;;
+  stop)
+    echo "Stoping docker couchdb..."
+    docker stop couchdb_couchdb_1
+    ;;
+  *)
+    echo "Usage: sudo service docker-couchdb {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+

@@ -1,0 +1,21 @@
+#! /bin/sh
+# /etc/init.d/docker-gitlab
+#
+
+case "$1" in
+  start)
+    echo "Starting docker gitlab..."
+    docker start gitlab_postgresql_1 gitlab_redis_1 gitlab_gitlab_1
+    ;;
+  stop)
+    echo "Stoping docker gitlab..."
+    docker stop gitlab_postgresql_1 gitlab_redis_1 gitlab_gitlab_1
+    ;;
+  *)
+    echo "Usage: sudo service docker-gitlab {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+
