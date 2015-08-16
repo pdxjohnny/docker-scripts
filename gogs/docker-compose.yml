@@ -1,0 +1,8 @@
+gogs:
+  image: codeskyblue/docker-gogs
+  ports:
+    - "10011:22"
+    - "10010:3000"
+  volumes:
+    - /srv/docker/gogs:/data
+

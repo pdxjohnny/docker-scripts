@@ -21,7 +21,7 @@ That puts the docker-<service> file in init.d
 Finally run 
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 To confirm that the container is running correctly

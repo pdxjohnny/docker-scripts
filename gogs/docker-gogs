@@ -1,0 +1,21 @@
+#! /bin/sh
+# /etc/init.d/docker-gogs
+#
+
+case "$1" in
+  start)
+    echo "Starting docker gogs..."
+    docker start gogs_gogs_1
+    ;;
+  stop)
+    echo "Stoping docker gogs..."
+    docker stop gogs_gogs_1
+    ;;
+  *)
+    echo "Usage: sudo service docker-gogs {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+
