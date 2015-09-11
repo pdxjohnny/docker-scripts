@@ -1,5 +1,6 @@
 gogs:
-  image: codeskyblue/docker-gogs
+  image: gogs/gogs
+  restart: always
   ports:
     - "10011:22"
     - "10010:3000"
