@@ -2,8 +2,8 @@ gogs:
   image: gogs/gogs
   restart: always
   ports:
-    - "10011:22"
-    - "10010:3000"
+    - "10022:22"
+    - "10080:3000"
   volumes:
     - /srv/docker/gogs:/data
 
